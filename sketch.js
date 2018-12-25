@@ -1,7 +1,7 @@
 var boids = [];
 
 function setup() {
-  createCanvas(document.window.width, document.window.height);
+  createCanvas(windowWidth, windowHeight);
 
   // Add an initial set of boids into the system
   for (var i = 0; i < 10; i++) {
@@ -17,7 +17,9 @@ function draw() {
   }
 }
 
-
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 // Boid class
 // Methods for Separation, Cohesion, Alignment added
 function Boid(x, y) {
