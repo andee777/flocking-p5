@@ -1,7 +1,7 @@
 var boids = [];
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth - 20, windowHeight -100);
 
   // Add an initial set of boids into the system
   for (var i = 0; i < 10; i++) {
