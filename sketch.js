@@ -10,7 +10,6 @@ function setup() {
 }
 
 function draw() {
-  tint(255, 127);  // Display at half opacity
   //background(51);
 
   // Run all the boids
@@ -86,8 +85,8 @@ Boid.prototype.seek = function(target) {
 
 // Draw boid as a circle
 Boid.prototype.render = function() {
-  fill(127, 127, 3, 100);
-  stroke(200);
+  fill(127, 127, 3);
+  stroke(127, 127, 3, 100);
   ellipse(this.position.x, this.position.y, 16, 16);
 }
 
