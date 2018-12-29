@@ -86,7 +86,8 @@ Boid.prototype.seek = function(target) {
 // Draw boid as a circle
 Boid.prototype.render = function() {
   fill(255);
-  stroke(0, 0, 0);
+  stroke(0, 121, 204);
+  strokeWeight(2);
   ellipse(this.position.x, this.position.y, 16, 16);
 }
 
