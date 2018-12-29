@@ -11,11 +11,10 @@ function setup() {
 
 function draw() {
   //background(51);
-  // Run all the boids
+  clear();
   for (var i = 0; i < boids.length; i++) {
     boids[i].run(boids);
   }
-  clear();
 
 }
 
