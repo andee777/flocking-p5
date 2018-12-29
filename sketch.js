@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-  background(51, 51, 51, 0);
+  background(51, 51, 51, 100);
   // Run all the boids
   for (var i = 0; i < boids.length; i++) {
     boids[i].run(boids);
