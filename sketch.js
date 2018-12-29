@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-  background(51, 51, 51, 100);
+  background(51);
   // Run all the boids
   for (var i = 0; i < boids.length; i++) {
     boids[i].run(boids);
@@ -84,7 +84,7 @@ Boid.prototype.seek = function(target) {
 
 // Draw boid as a circle
 Boid.prototype.render = function() {
-  fill(127, 127);
+  fill(127, 127, 3, 100);
   stroke(200);
   ellipse(this.position.x, this.position.y, 16, 16);
 }
