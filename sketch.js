@@ -11,7 +11,7 @@ function setup() {
 
 function draw() {
   tint(255, 127);  // Display at half opacity
-  background(51);
+  //background(51);
 
   // Run all the boids
   for (var i = 0; i < boids.length; i++) {
